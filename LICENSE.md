@@ -1,4 +1,4 @@
-# Licensed undec the GNU LGPL/2.1 license
+# Licensed under the GNU LGPL/2.1 license
 
 This work is licensed under Creative Commons GNU LGPL License.
 
