@@ -1,6 +1,6 @@
 # XMLJsonUtility
 
-This is [Caplin's](http://www.caplin.com) fork of the this open source library that provides two functions to convert XML to JSON and JSON to XML.
+This is [Caplin's](http://www.caplin.com) fork of the [this](http://goessner.net/download/prj/jsonxml/) open source library that provides two functions to convert XML to JSON and JSON to XML.
 
 ## About origin
 We wrapped the two functions in it's own namespace to avoid introducing two new global functions. We also formatted the code to be (more or less) written in our style. We added JsDoc documentation, extracted inner functions so they are not redefined every time the two functions are called. And we added Jasmine tests. Apart from that, the code is the same as the original.
