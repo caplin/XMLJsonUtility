@@ -54,4 +54,15 @@ describe('XmlUtility', function() {
 		}
 	});
 
+	it('should respect the sTab argument', function() {
+		var xml = '<test><prop>a</prop><prop2><a>b</a><c>d</c></prop2><prop3>a</prop3><prop3>b</prop3></test>';
+		var xmlDom = (new DOMParser()).parseFromString(xml, 'text/xml');
+
+		var json = caplin.core.XmlUtility.toJson(xmlDom, '#');
+
+		var expectedJson = '{#"test":{\n##"prop":"a",\n##"prop2":{\n###"a":"b",\n###"c":"d"\n##},\n##"prop3":[\n###"a",\n###"b"\n##]\n#}}';
+
+		expect(json).toEqual(expectedJson);
+	});
+
 });
